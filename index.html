@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" >
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" >Rajeev Kumar</h1>
+
+          <p class="title">Mern stack developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:Rajeevroy70701@gmail.com" class="contact-link">Rajeevroy70701@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+91 8540953878" class="contact-link">+91-8540953878</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-06-23">July 2, 2003</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>India</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://x.com/rajeev_709" class="social-link" target="_blank">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://medium.com/@rajeevroy70701" class="social-link" target="_blank">
+              <ion-icon name="logo-medium"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/rajeevroy21/" class="social-link" target="_blank">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://github.com/rajeevroy21" class="social-link" target="_blank">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://leetcode.com/rajeevroy" class="social-link" target="_blank">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" alt="LeetCode" style="width:24px;height:24px;">
+            </a>
+          </li>
+          
+          <li class="social-item">
+            <a href="https://codeforces.com/profile/Rajeev709" class="social-link" target="_blank">
+              <img src="assets/images/images-removebg-preview.png" alt="Codeforces" style="width:24px;height:24px;">
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://www.codechef.com/users/rajeevroy" class="social-link" target="_blank">
+              <img src="assets/images/codechef.png" alt="codechef" style="width:24px;height:24px;">
+            </a>
+          </li>
+
+
+        </ul>
+        
+        <style>
+          /* For image icons inside links */
+          .social-item .social-link img {
+            filter: grayscale(100%) brightness(90%); /* black-white normal */
+            transition: filter 0.3s ease;
+          }
+        
+          .social-item .social-link:hover img {
+            filter: grayscale(100%) brightness(50%); /* darker black on hover */
+          }
+        </style>
+      </div>
+    </aside>
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm Rajeev Kumar, a passionate Web Developer and Backend Enthusiast based in India. I specialize in building dynamic websites, powerful backend systems, and intuitive user experiences. With a strong command over languages like Python, C, and C++, I create efficient, scalable, and modern web applications.
+          </p>
+        
+          <p>
+            I believe in writing clean, maintainable code and designing websites that not only work flawlessly but also leave a lasting impression. Whether it's creating a simple landing page, developing a full-stack application, or working on backend logic, I enjoy tackling new challenges and constantly improving my skills.
+          </p>
+        
+          <p>
+            Beyond development, I actively participate in coding competitions on platforms like LeetCode, CodeChef, and Codeforces, which has sharpened my problem-solving abilities and algorithmic thinking. I'm also passionate about open-source contributions and sharing knowledge through writing technical articles.
+          </p>
+        
+          <p>
+            When I’m not coding, you’ll find me brainstorming new ideas, exploring the latest tech trends, or creating YouTube Shorts about Artificial Intelligence and technology tips. My goal is to blend creativity with technology to build solutions that make a real difference.
+          </p>
+        
+          <p>
+            I’m always excited to collaborate on innovative projects, contribute to impactful teams, and grow as a developer. Let's build something amazing together!
+          </p>
+        </section>
+        
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My Skills</h3>
+        
+          <ul class="skills-list content-card">
+        
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <span class="skill-icon">🖥️</span>
+                <h5 class="h5">Languages</h5>
+              </div>
+              <p class="skill-desc">C/C++, Java, JavaScript, TypeScript, HTML+CSS, Tailwind CSS</p>
+            </li>
+        
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <span class="skill-icon">📚</span>
+                <h5 class="h5">Libraries</h5>
+              </div>
+              <p class="skill-desc">C++ STL, React.js</p>
+            </li>
+        
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <span class="skill-icon">🛠️</span>
+                <h5 class="h5">Web Dev Tools</h5>
+              </div>
+              <p class="skill-desc">Node.js, VS Code, Git, GitHub, Docker, WebSocket</p>
+            </li>
+        
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <span class="skill-icon">🏗️</span>
+                <h5 class="h5">Frameworks</h5>
+              </div>
+              <p class="skill-desc">React.js, Express.js, Next.js</p>
+            </li>
+        
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <span class="skill-icon">🗄️</span>
+                <h5 class="h5">Databases</h5>
+              </div>
+              <p class="skill-desc">MongoDB, SQL, PostgreSQL</p>
+            </li>
+        
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <span class="skill-icon">📖</span>
+                <h5 class="h5">Relevant Coursework</h5>
+              </div>
+              <p class="skill-desc">DSA, OS, CN, OOP, Software Development, DBMS</p>
+            </li>
+        
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <span class="skill-icon">🌟</span>
+                <h5 class="h5">Areas of Interest</h5>
+              </div>
+              <p class="skill-desc">Web Design and Development (MERN), SDE, Frontend, Backend, Web3</p>
+            </li>
+        
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <span class="skill-icon">🤝</span>
+                <h5 class="h5">Soft Skills</h5>
+              </div>
+              <p class="skill-desc">Problem Solving, Leadership, Teamwork, Self-learning, Presentation, Adaptability, Communication</p>
+            </li>
+        
+          </ul>
+        
+        </section>
+        
+        <!--
+          - service
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+            <div class="modal-img-wrapper">
+            </div>
+          </section>
+
+        </div>
+
+      </article>
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+        <section class="resume-section">
+          <h3 class="h3 resume-title">My Resume</h3>
+        
+          <iframe src="https://drive.google.com/file/d/12W_Mottk4UHVZS9qqLjdJmdBEyVRoyFu/preview" 
+                  width="100%" height="600px" frameborder="0">
+          </iframe>
+        
+          <p class="download-resume">
+            <a href="https://drive.google.com/file/d/12W_Mottk4UHVZS9qqLjdJmdBEyVRoyFu/view" target="_blank">
+              Download Resume
+            </a>
+          </p>
+        </section>
+        
+
+      </article>
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Projects</h2>
+        </header>
+
+        <section class="projects">
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item active">
+              <a href="https://code-yatra-9bdu.vercel.app/" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon> <!-- For viewing project -->
+                  </div>
+                  <img src="./assets/images/project-1.png" >
+                </figure>
+                
+              </a>
+            
+              <!-- GitHub link separately -->
+              <div class="github-link" style="margin-top: 8px;">
+                <a href="https://github.com/rajeevroy21/CodeYatra" target="_blank" style="color: white; text-decoration: none; ">
+                  CodeYatra – Coding Profile Tracker
+                </a>
+              </div>
+            </li>
+           
+
+            <li class="project-item  active">
+              <a href="https://medium-blog--one.vercel.app"  target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.png"  loading="lazy">
+                </figure>
+
+              </a>
+               <!-- GitHub link separately -->
+               <div class="github-link" style="margin-top: 8px;">
+                <a href="https://github.com/rajeevroy21/medium-blog/tree/main" target="_blank" style="color: white; text-decoration: none; ">
+                  Medium Blog Website
+                </a>
+              </div>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="https://github.com/rajeevroy21/FakeNewsDetection"  target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.png" alt="fundo" loading="lazy">
+                </figure>
+              </a>
+               <!-- GitHub link separately -->
+               <div class="github-link" style="margin-top: 8px;">
+                <a href="https://github.com/rajeevroy21/FakeNewsDetection" target="_blank" style="color: white; text-decoration: none; ">
+                  Fake News Detection
+                </a>
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="https://medium.com/@rajeevroy70701/introduction-to-react-js-why-react-virtual-dom-component-based-architecture-c248e91e297f" target="_blank">
+            
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" loading="lazy">
+                </figure>
+            
+                <div class="blog-content">
+            
+                  <div class="blog-meta">
+                    <p class="blog-category">Web Development</p>
+            
+                    <span class="dot"></span>
+            
+                    <time datetime="2023-08-01">Aug 1, 2023</time>
+                  </div>
+            
+                  <h3 class="h3 blog-item-title">Introduction to React.js — Why React? Virtual DOM & Component-Based Architecture</h3>
+            
+                  <p class="blog-text">
+                    React.js is one of the most popular JavaScript libraries used for building user interfaces. 
+                  </p>
+            
+                </div>
+            
+              </a>
+            </li>
+            <li class="blog-post-item">
+              <a href="https://medium.com/@rajeevroy70701/understanding-react-hooks-usestate-233c8af74a05">
+            
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" loading="lazy">
+                </figure>
+            
+                <div class="blog-content">
+            
+                  <div class="blog-meta">
+                    <p class="blog-category">Web Development</p>
+            
+                    <span class="dot"></span>
+            
+                    <time datetime="2023-08-01">Aug 1, 2023</time>
+                  </div>
+            
+                  <h3 class="h3 blog-item-title">Understanding React Hooks — useState</h3>
+            
+                  <p class="blog-text">
+                    In this blog post, we explore the fundamental React Hook: `useState`. Learn how to manage state in functional components and the benefits of using hooks for state management in React applications.
+                  </p>
+            
+                </div>
+            
+              </a>
+            </li>
+            <li class="blog-post-item">
+              <a href="https://medium.com/@rajeevroy70701/understanding-jsx-and-react-components-functional-vs-class-66347d1bd000">
+            
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.jpg" loading="lazy">
+                </figure>
+            
+                <div class="blog-content">
+            
+                  <div class="blog-meta">
+                    <p class="blog-category">Web Development</p>
+            
+                    <span class="dot"></span>
+            
+                    <time datetime="2023-08-01">Aug 1, 2023</time>
+                  </div>
+            
+                  <h3 class="h3 blog-item-title">Understanding JSX and React Components (Functional vs Class)</h3>
+            
+                  <p class="blog-text">
+                    This article explores the concept of JSX in React and the two types of components: functional and class-based. We’ll break down the differences between functional and class components, and why functional components with hooks are now the preferred choice in React development.
+                  </p>
+            
+                </div>
+            
+              </a>
+            </li>
+            
+            
+            
+
+            
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6402.1729390150695!2d80.55168600978756!3d16.23584228021486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4a0953a362f945%3A0x11aa0de9063844ab!2sVignan&#39;s%20Foundation%20for%20Science%2C%20Technology%20%26%20Research%20(Deemed%20to%20be%20University)!5e0!3m2!1sen!2sin!4v1745676932020!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+          <h3 class="h3 form-title">Contact Form</h3>
+        
+          <form id="contact-form" class="form">
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required>
+              <input type="email" name="email" class="form-input" placeholder="Email address" required>
+            </div>
+        
+            <textarea name="message" class="form-input" placeholder="Your Message" required></textarea>
+        
+            <button class="form-btn" type="submit">
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+          </form>
+        </section>
+      </article>
+
+    </div>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+  <script>
+    (function(){
+      emailjs.init("awt-qxzDxWo2Arpi9"); 
+    })();
+  
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+  
+      emailjs.sendForm('service_p2hzmli', 'template_11w1efs', this)
+        .then(function() {
+            alert('Message sent successfully!');
+        }, function(error) {
+            alert('Failed to send the message. Please try again later.', error);
+        });
+    });
+  </script>
+  
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
