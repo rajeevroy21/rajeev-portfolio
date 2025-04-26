@@ -1,19 +1,22 @@
 'use strict';
 
-
-
 // element toggle function
-const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
-
-
+const elementToggleFunc = function (elem) { 
+  if (elem) { // check if element is not null
+    elem.classList.toggle("active"); 
+  }
+}
 
 // sidebar variables
 const sidebar = document.querySelector("[data-sidebar]");
 const sidebarBtn = document.querySelector("[data-sidebar-btn]");
 
 // sidebar toggle functionality for mobile
-sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
-
+if (sidebarBtn && sidebar) { // check if both exist
+  sidebarBtn.addEventListener("click", function () { 
+    elementToggleFunc(sidebar); 
+  });
+}
 
 
 // testimonials variables
