@@ -1872,6 +1872,10 @@ textarea.form-input::-webkit-resizer { display: none; }
   .social-list { justify-content: center; }
 
 
+  .skill-desc {
+    color: hsl(44, 70.60%, 73.30%); /* change this to whatever color you want */
+  }
+
 
   /**
 	 * RESUME
