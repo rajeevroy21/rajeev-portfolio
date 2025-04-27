@@ -1872,10 +1872,6 @@ textarea.form-input::-webkit-resizer { display: none; }
   .social-list { justify-content: center; }
 
 
-  .skill-desc {
-    color: hsl(40, 6.40%, 90.80%); /* change this to whatever color you want */
-  }
-
 
   /**
 	 * RESUME
@@ -1884,3 +1880,6 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+.skill-desc {
+  color: hsl(40, 87.50%, 71.80%); 
+} 
